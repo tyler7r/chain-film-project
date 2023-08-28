@@ -1,8 +1,15 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { UserSignup } from './UserSignup';
+
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path='/signup' element={<UserSignup />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
